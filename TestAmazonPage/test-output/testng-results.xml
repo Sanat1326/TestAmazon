@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[openBrowser]]>
+    </line>
+    <line>
+      <![CDATA[login]]>
+    </line>
+    <line>
+      <![CDATA[logout]]>
+    </line>
+    <line>
+      <![CDATA[closeBrowser]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-11-24T14:26:26 IST" name="Default suite" finished-at="2023-11-24T14:27:28 IST" duration-ms="62079">
+    <groups>
+    </groups>
+    <test started-at="2023-11-24T14:26:26 IST" name="Default test" finished-at="2023-11-24T14:27:28 IST" duration-ms="62079">
+      <class name="in.amazon.testscripts.HomePageModule">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:in.amazon.testscripts.HomePageModule@31fa1761]" started-at="2023-11-24T14:26:26 IST" name="openBrowser" finished-at="2023-11-24T14:26:39 IST" duration-ms="13525" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[openBrowser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:in.amazon.testscripts.HomePageModule@31fa1761]" started-at="2023-11-24T14:26:39 IST" name="login" finished-at="2023-11-24T14:27:25 IST" duration-ms="45417" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="testHomePageTitle()[pri:0, instance:in.amazon.testscripts.HomePageModule@31fa1761]" started-at="2023-11-24T14:27:25 IST" name="testHomePageTitle" finished-at="2023-11-24T14:27:27 IST" duration-ms="2888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageTitle -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:in.amazon.testscripts.HomePageModule@31fa1761]" started-at="2023-11-24T14:27:27 IST" name="logout" finished-at="2023-11-24T14:27:27 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:in.amazon.testscripts.HomePageModule@31fa1761]" started-at="2023-11-24T14:27:28 IST" name="closeBrowser" finished-at="2023-11-24T14:27:28 IST" duration-ms="118" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b90f9cf92d468828ee35d491c8fff527, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\PRANAV\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64962/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b90f9cf92d468828ee35d491c8fff527]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b90f9cf92d468828ee35d491c8fff527, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\PRANAV\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64962/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b90f9cf92d468828ee35d491c8fff527
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:409)
+at in.amazon.generics.BaseClass.closeBrowser(BaseClass.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+            <line>
+              <![CDATA[closeBrowser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- in.amazon.testscripts.HomePageModule -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
